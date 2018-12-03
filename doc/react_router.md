@@ -19,14 +19,6 @@
            "warning": "^3.0.0"
          }
        安装了react-router-dom，npm会解析并安装上述依赖包。可以看到，其中包括react-router。
-
-       
-       取消tslint 规定了必须按顺序导入文件
-        在tslint.json中配置 
-        "rules": {
-                    "ordered-imports": false
-                  }
-                  
                   
         嵌套路由 两种方式
         [https://reacttraining.com/react-router/web/example/route-config]
