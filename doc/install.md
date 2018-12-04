@@ -21,10 +21,16 @@
          npm install react-router-dom
          遇到错误  Could not find a declaration file for module 'react-router-dom'
          执行  npm install @types/react-router-dom
+
+         react-router4配置 详见 react-router.md
          
     - 2、安装ant design
           npm install antd --save
           在 App.css中引入antd的样式  @import '~antd/dist/antd.css';
+
+          v3.11.0版本 报错 Type error: Cannot find name 'ResizeObserver'
+          需要在node_modules/antd/lib/input/TextArea.d.ts中引入
+          import ResizeObserver from 'resize-observer-polyfill';
 
     - 3、安装lodash
           npm intall lodash --save
