@@ -1,11 +1,32 @@
-styled-jsx
-styled-components
+Sass：CSS预处理器
 
-postcss
+CSS预处理器：将你根据它的规则写出来的格式转换成css
 
-Atomic CSS
-CSS中的原子化和组件化结合才能发挥优势。否则一旦其中的某个样式发生了变化，修改所涉及的地方就很多了。
+Sass不支持模块化，会引起各文件同名变量之间的冲突
 
-Promise [https://juejin.im/post/5b62b3adf265da0f9e58b733]
+为了解决命名冲突问题，有两种解决方案： CSS-in-JS、CSS Modules
+CSS Modules的解决原理：
 
-es6 API
+自定义的类：
+.article{
+    font-size:  16px;
+}
+
+- 1、将你定义的css类，根据自己的规则生成新的类
+.aaa{
+    font-size: 16px;
+}
+
+- 2、将自定义的类和转换后的类进行映射，生成一个json对象
+{
+    article: aaa
+}
+
+- 3、最后调用时，是读取生成的json对象，并且使用它，而不是自定义的类
+  styles.article
+
+引入PostCSS --- 插件系统(a tool for transforming css with JS plugins)
+PostCSS的原理就是如此，其中的转换规则是
+    文件名相关的前缀 + 自定义的类  =  转换后的类
+
+在页面中实际引用的是转换后的类，因为有了文件名相关的前缀，所以各个模块同名类不会有冲突。

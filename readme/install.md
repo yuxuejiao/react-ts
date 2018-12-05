@@ -35,6 +35,6 @@
     - 3、安装lodash
           npm intall lodash --save
     
-    - 4、css方案比较选择
+    - 4、安装 PostCss
 
 
