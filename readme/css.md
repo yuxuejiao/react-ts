@@ -26,7 +26,3 @@ CSS Modules的解决原理：
   styles.article
 
 引入PostCSS --- 插件系统(a tool for transforming css with JS plugins)
-PostCSS的原理就是如此，其中的转换规则是
-    文件名相关的前缀 + 自定义的类  =  转换后的类
-
-在页面中实际引用的是转换后的类，因为有了文件名相关的前缀，所以各个模块同名类不会有冲突。
