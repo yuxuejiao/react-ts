@@ -1,3 +1,20 @@
-.test{
-    color: red;
+
+
+:root {
+    --text-color: red;
+}
+
+.test {
+    color: var(--text-color);
+    font-size: 14px;
+    i{
+        color: blue;
+    }
+}
+
+.rect{
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    transform:rotate(9deg);
 }
