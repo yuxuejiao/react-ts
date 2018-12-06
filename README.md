@@ -17,30 +17,33 @@
 - 3、继续执行命令 cd my-app  npm start
 
 - 4、安装需要的库
-    - 1、安装react-router-v4.3.1
-         npm install react-router-dom
-         遇到错误  Could not find a declaration file for module 'react-router-dom'
-         执行  npm install @types/react-router-dom
-
+    - 1、安装react-router-v4.3.1  
+         npm install react-router-dom  
+         
+         遇到错误  Could not find a declaration file for module 'react-router-dom'  
+         执行  npm install @types/react-router-dom  
+         
          react-router4配置 详见 doc/react-router.md
          
-    - 2、安装ant design
-            npm install antd --save
-          在 App.css中引入antd的样式  @import '~antd/dist/antd.css';
-          v3.11.0版本 报错 Type error: Cannot find name 'ResizeObserver'
-          需要在node_modules/antd/lib/input/TextArea.d.ts中引入
+    - 2、安装ant design  
+          npm install antd --save  
+          在 App.css中引入antd的样式  @import '~antd/dist/antd.css';   
+          
+          v3.11.0版本 报错 Type error: Cannot find name 'ResizeObserver'  
+          需要在node_modules/antd/lib/input/TextArea.d.ts中引入  
           import ResizeObserver from 'resize-observer-polyfill';
-    - 3、 安装mobx （mobx5不支持IE浏览器，所以install的是mobx4版本的）
-         npm install mobx --save
+          
+    - 3、 安装mobx （mobx5不支持IE浏览器，所以install的是mobx4版本的）  
+         npm install mobx --save  
          npm install mobx-react --save
          
-         启用装饰器语法：
+         启用装饰器语法：  
          在 tsconfig.json 中启用编译器选项 "experimentalDecorators": true 
 
-    - 4、安装lodash
+    - 4、安装lodash  
           npm intall lodash --save
           
-    - 5、安装 PostCss插件 
+    - 5、安装 PostCss插件   
          配置 见 doc/css.md
     
 
