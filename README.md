@@ -25,17 +25,22 @@
          react-router4配置 详见 doc/react-router.md
          
     - 2、安装ant design
-          npm install antd --save
+            npm install antd --save
           在 App.css中引入antd的样式  @import '~antd/dist/antd.css';
-
           v3.11.0版本 报错 Type error: Cannot find name 'ResizeObserver'
           需要在node_modules/antd/lib/input/TextArea.d.ts中引入
           import ResizeObserver from 'resize-observer-polyfill';
+    - 3、 安装mobx （mobx5不支持IE浏览器，所以install的是mobx4版本的）
+         npm install mobx --save
+         npm install mobx-react --save
+         
+         启用装饰器语法：
+         在 tsconfig.json 中启用编译器选项 "experimentalDecorators": true 
 
-    - 3、安装lodash
+    - 4、安装lodash
           npm intall lodash --save
-    
-    - 4、安装 PostCss插件 
+          
+    - 5、安装 PostCss插件 
          配置 见 doc/css.md
     
 
