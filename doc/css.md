@@ -4,7 +4,7 @@ CSS预处理器：将你根据它的规则写出来的格式转换成css
 
 Sass不支持模块化，会引起各文件同名变量之间的冲突
 
-为了解决命名冲突问题，有两种解决方案： CSS-in-JS、CSS Modules
+为了解决命名冲突问题，有两种解决方案： CSS-in-JS、CSS Modules  
 CSS Modules的解决原理：
 
 自定义的类：
@@ -56,7 +56,8 @@ CSS Modules的解决原理：
     - 4、样式规则嵌套
 - 4、postcss-plugin-px2rem   
     将px转为rem 
-    若是想让px不被转换成rem，则使用大写的PX。如设置rem的基准值 html的font-size则用的就是大写的PX。  
+    若是想让px不被转换成rem，则使用大写的PX。  
+    如设置rem的基准值 html的font-size则用的就是大写的PX。  
     
 ##### 在项目中引入以上插件： 
 - 1、新增postcss.config.js文件 引入各种以上插件
