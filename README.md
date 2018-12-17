@@ -8,7 +8,8 @@
 	VCS -> Git -> clone -> 填入 github项目地址
 
 ### 项目搭建过程
-- 1、首先升级了node版本，在官网上下载了node最新版本。从而Npm也更新到最新版本
+- 1、首先升级了node版本，在官网上下载了node最新版本。从而Npm也更新到最新版本。
+	PS: 'npm' is not recognized as an internal or external command。 下载完node之后，重启一下cmd或者编辑器。
 
 - 2、使用脚手架 create-react-app-typescript，运行命令npx create-react-app my-app --scripts-version=react-scripts-ts  
 
